@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #f7a800;
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 168, 0, 0.5);
+}
+
+
+input[type="submit"], input[type="reset"] {
+    background-color: #f7a800;
+    color: #121212;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #e69300;
+    box-shadow: 0 0 5px rgba(247, 168, 0, 0.5);
+}
+
+input[type="submit"]:active, input[type="reset"]:active {
+    background-color: #cc7a00;
+}
+
+
+a {
+    color: #f7a800;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e69300;
+}
+
+
+.required {
+    color: #f7a800;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+
+.alert-message {
+    border: 1px solid #e60000;
+    background-color: #e60000;
+    color: #fff;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
